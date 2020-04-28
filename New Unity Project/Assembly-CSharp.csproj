@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Class2_Operator.cs" />
+    <Compile Include="Assets\Class3_Method.cs" />
+    <Compile Include="Assets\Person.cs" />
+    <Compile Include="Assets\Practice1_OperatorMethod.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/ted/Unity_Lion_CSharp/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

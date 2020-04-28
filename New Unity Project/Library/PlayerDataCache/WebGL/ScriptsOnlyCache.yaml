@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Class2_Operator
+    - Practice1_OperatorMethod
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -18,7 +19,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.InputField
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/class2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -44,17 +45,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11348}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 12106}
+      Script: {instanceID: 11734}
     - Class: 114
-      Script: {instanceID: 12292}
+      Script: {instanceID: 12110}
     - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 12582}
+      Script: {instanceID: 12462}
     - Class: 114
-      Script: {instanceID: 12930}
+      Script: {instanceID: 12586}
+    - Class: 114
+      Script: {instanceID: 12934}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -194,6 +197,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: 68f0aae3a76f5a60fcf652a13cc8bf83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Practice1_OperatorMethod
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -228,6 +237,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 28354a6e2f612bcb796913fb53afed7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Class3_Method
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -494,11 +509,17 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: aed2b8aa5ac7989d7f8abe42b4e1d06f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Person
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
   platform: 20
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/class2.unity
   playerPath: C:/ted/Unity_Lion_CSharp/class2
