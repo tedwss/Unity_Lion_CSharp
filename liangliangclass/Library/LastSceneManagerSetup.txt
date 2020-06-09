@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Game over.unity
+- path: "Assets/\u8840\u91CF.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -69,12 +69,22 @@
     <Compile Include="Assets\Class\Class4_Prop.cs" />
     <Compile Include="Assets\Class\Class5_IfSwitchLoop.cs" />
     <Compile Include="Assets\Class\Class6_StaticAPI.cs" />
+    <Compile Include="Assets\Cube.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\Person.cs" />
     <Compile Include="Assets\PiXel Cube World Atlantis\Scripts\TextureOffset.cs" />
     <Compile Include="Assets\Practice1_OperatorMethod.cs" />
+    <Compile Include="Assets\Shape.cs" />
     <Compile Include="Assets\Ship.cs" />
+    <Compile Include="Assets\Triangle.cs" />
     <Compile Include="Assets\car.cs" />
+    <Compile Include="Assets\class7\Far.cs" />
+    <Compile Include="Assets\class7\Fly.cs" />
+    <Compile Include="Assets\class7\Ground.cs" />
+    <Compile Include="Assets\class7\House.cs" />
+    <Compile Include="Assets\class7\Monster.cs" />
+    <Compile Include="Assets\class7\MonsterManager.cs" />
+    <Compile Include="Assets\class7\ThrowObject.cs" />
     <Compile Include="Assets\practice6.cs" />
     <None Include="Assets\PiXel Cube World Atlantis\Read Me.txt" />
     <None Include="Assets\PiXel Cube World Atlantis\Scripts\Script read me.txt" />
@@ -104,6 +114,18 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/ted/Unity_Lion_CSharp/CSharp/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>C:/ted/Unity_Lion_CSharp/CSharp/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>C:/ted/Unity_Lion_CSharp/CSharp/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/ted/Unity_Lion_CSharp/CSharp/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/ted/Unity_Lion_CSharp/CSharp/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

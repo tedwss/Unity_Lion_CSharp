@@ -1,26 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-// [Range(0f, 1f)] public float Speed;
-
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [Range(0f, 1f)] public float Speed;
     [Header("選擇操控玩家的方法")]
     public ControlType Control;
+    [Header("手機搖桿物件")]
+    public GameObject Joystickobject;
     // 判斷是否有使用手機搖桿
     bool UseJoystick;
     // 判斷滑鼠是否點擊玩家物件
     bool MouseClick;
-    public eunm ControlType
+    public enum ControlType
     {
         鍵盤=0, 手機陀螺儀=1, 滑鼠=2, 手機搖桿=3
     }
+    [Header("玩家血量")]
+    public float playerHP;
+    // 程式中計算玩家的血量數值
+    float ScriptHP;
+    [Header("玩家血條")]
+    public Image HPbar;
+    [Header("打死敵機加分")]
+    public float AddScore;
+    float ScriptScore;
+    public Text ScoreText;
+
+    // 儲存分數的欄位
+    string SaveScore = "SaveScore";
     // Start is called before the first frame update
     void Start()
     {
-        
+        // 程式中的血量 = 屬性面板中調整的玩家血量數值
+        ScriptHP = playerHP;
+    }
+    // 敵機子彈打到玩家，玩家進行扣血
+    public void HurtPlayer(float hurt)
+    {
+        // 玩家血量遞減
+        ScriptHP -= hurt;
+        // 限制玩家血量介於0-自己設定的數值
+        ScriptHP = Mathf.Clamp(ScriptHP, 0, playerHP);
+        // 玩家血條數值 = 程式中血量/自己設定的血量數值
+        HPbar.fillAmount = ScriptHP / playerHP;
+        // 如果玩家血量 <= 0
+        if (ScriptHP <= 0)
+        {
+            PlayerPrefs.SetFloat(SaveScore, ScriptScore);
+            // 跳到遊戲結束畫面
+            Application.LoadLevel("Gameover");
+        }
+    }
+    // 玩家子彈打到怪物，玩家進行加分
+    public void Score()
+    {
+        ScriptScore += AddScore;
+        ScoreText.text = "Score:" + ScriptScore;
     }
 
     // Update is called once per frame
@@ -57,6 +94,7 @@ public class Player : MonoBehaviour
         // 限制數值Mathf.Clamp(限制的項目,最大值,最小值)
         //Transform.position = new Vector3(Mathf.Clamp(Transform.position.x, -2.3f.2.3f), Mathf.Clamp(Transform.position.y, -4.6, 4.6), Transform.position.z)
     }
+
     // 手指剛接觸搖桿
     public void UsingJoystick()
     {
@@ -65,7 +103,7 @@ public class Player : MonoBehaviour
     // 手指離開搖桿
     public void UnUsingJoystick()
     {
-
+        UseJoystick = true;
     }
 
 
